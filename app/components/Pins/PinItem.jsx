@@ -11,15 +11,10 @@ function PinItem({pin}) {
 
     }
   return (
+    <div className='conatiner'>
     <div className='bg-[#D2D3D3] rounded-3xl p-3 border border-[#9651DB] border-4'>
-       <div class="relative 
-       before:absolute
-       before:h-full before:w-full
-       before:rounded-3xl
-       before:z-10
-       hover:cursor-pointer
+       <div class="hover:cursor-pointer
        " onClick={()=>router.push("/pin/"+pin.id)}>
-       
         <Image src={pin.image}
         alt={pin.title}
         width={500}
@@ -28,9 +23,11 @@ function PinItem({pin}) {
         cursor-pointer relative z-0'
         />
        </div>
+       <div>
         <h2 className='font-semibold 
         text-[18px] mb-1 mt-2 line-clamp-2 text-black'>{pin.title}</h2>
-        <UserTag user={user} />
+        <UserTag user={user} /></div>
+    </div>
     </div>
   )
 }

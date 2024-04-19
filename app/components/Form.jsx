@@ -13,7 +13,7 @@ function Form() {
     const {data:session}=useSession();
     const [title,setTitle]=useState();
     const [desc,setDesc]=useState();
-    const [link,setLink]=useState();
+    const [category,setCategory]=useState();
     const [file,setFile]=useState();
     const [loading,setLoading]=useState(false);
     const router=useRouter();
@@ -37,8 +37,8 @@ function Form() {
                 const postData={
                     title:title,
                     desc:desc,
-                    link:link,
                     image:url,
+                    category:category,
                     userName:session.user.name,
                     email:session.user.email,
                     userImage:session.user.image,
@@ -91,8 +91,8 @@ function Form() {
         className=' outline-none  w-full mt-8  text-[14px] text-black
         border-b-[2px] border-gray-400 placeholder-black bg-[#d2d3d3]'/>
           <input type="text"
-          onChange={(e)=>setLink(e.target.value)}
-           placeholder='Add a Destination Link' 
+          onChange={(e)=>setCategory(e.target.value)}
+           placeholder='Category of your post' 
         className=' outline-none  w-full mt-[70px] text-black
         border-b-[2px] border-gray-400 placeholder-black bg-[#d2d3d3]'/>
     </div>

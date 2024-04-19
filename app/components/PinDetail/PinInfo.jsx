@@ -8,13 +8,12 @@ function PinInfo({pinDetail}) {
     image:pinDetail.userImage
   }
   return (
-    <div>
+    <div >
       <h2 className='text-[30px] font-bold mb-10 text-black'>{pinDetail.title}</h2>
-      <UserTag user={user} />
-      <h2 className='mt-10'>{pinDetail.desc}</h2>
-      <button className='p-2 text-white px-5 text-[23px]
-      mt-10 rounded-full bg-black  transition-all'
-      onClick={()=>window.open(pinDetail.link)}>Open Url</button>
+      <h2 className='mt-8 text-black font-semibold'>Description: {pinDetail.desc}</h2>
+      <h2 className='mt-8 mb-8 text-black 
+       rounded-full transition-all font-semibold'>Category: {pinDetail.category}</h2>
+       <UserTag user={user} />
     </div>
   )
 }
