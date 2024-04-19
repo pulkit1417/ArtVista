@@ -59,7 +59,7 @@ function Form() {
    
    
   return (
-    <div className=' bg-white p-16 rounded-2xl '>
+    <div className=' bg-white p-16 rounded-2xl  shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] mt-24'>
         <div className='flex justify-end mb-6'>
             <button onClick={()=>onSave()}
              className='bg-red-500 p-2
@@ -70,7 +70,7 @@ function Form() {
                 height={30} 
                 alt='loading'
                 className='animate-spin'  />:
-                <span>Save</span>}</button>
+                <span>Upload</span>}</button>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
            

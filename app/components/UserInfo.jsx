@@ -17,8 +17,7 @@ function UserInfo({userInfo}) {
         alt='userImage'
         width={100}
         height={100}
-        className='rounded-full'/>
-
+        className='rounded-full mt-28'/>
         <h2 className='text-[30px]
         font-semibold'>{userInfo.userName}</h2>
         <h2 className='text-gray-400'>{userInfo.email}</h2>

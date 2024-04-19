@@ -41,32 +41,31 @@ function Header() {
   
   return (
     <div className='flex justify-between 
-     gap-3 md:gap-2 items-center p-6 '>
-        {/* <Image src='/logo.png' alt='logo'
-        width={60} height={60} onClick={()=>router.push('/')}
-        className='hover:bg-gray-300 p-2
-        rounded-full cursor-pointer'/> */}
-        <Image src='/logo.png' alt='logo' width={60} height={60} onClick={()=>router.push('/')}
-         className='hover:bg-gray-300 p-2 rounded-full cursor-pointer'/>
+     gap-3 md:gap-2 items-center p-6 fixed w-full z-1 backdrop:blur'>
+        <Image src={require('./logo.png')} alt='logo' width={60} height={60} onClick={()=>router.push('/')}
+         className=' scale-110'/>
         <button className='
          text-black p-3 px-6 rounded-full font-semibold
-         text-[25px]
+         text-[20px]
           hidden md:block' onClick={()=>router.push('/')}>Home</button>
         <button className=' p-3 px-6 text-black font-semibold
-         rounded-full text-[25px]' 
+         rounded-full text-[20px]' 
          onClick={()=>onCreateClick()}>Create</button>
+         <button className=' p-3 px-6 text-black font-semibold
+         rounded-full text-[20px]' 
+         onClick={()=>onExhibition()}>Exhibition</button>
         <div className='bg-[#e9e9e9] p-3 px-2 text-black
-         gap-3 items-center rounded-full w-full hidden md:flex'>
+         gap-3 items-center rounded-full w-full h-12 hidden md:flex'>
+          
         <HiSearch className='text-[34px] 
         text-black'/>
         <input type="text" placeholder='Search'
         className='bg-[#e9e9e9] outline-none w-full text-[22px] text-black' />
-       
         </div>
-        <HiSearch className='text-[25px] 
-        text-gray-500 md:hidden'/>
+        {/* <HiSearch className='text-[25px] 
+        text-gray-500 md:hidden'/> */}
         <HiBell className='text-[25px] md:text-[60px] text-gray-500 cursor-pointer'/>
-        <HiChat className='text-[25px] md:text-[60px] text-gray-500 cursor-pointer'/>
+        {/* <HiChat className='text-[25px] md:text-[60px] text-gray-500 cursor-pointer'/> */}
       {session?.user?  
       <Image src={session.user.image} 
        onClick={()=>router.push('/'+session.user.email)}

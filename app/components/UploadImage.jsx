@@ -6,7 +6,7 @@ function UploadImage({setFile}) {
 
   return (
     <div className='h-[400px] bg-[#fafafa]
-    rounded-lg mt-[-55px]'>
+    rounded-lg mt-[-40px]'>
         
         <label className='m-5 flex flex-col justify-center items-center
         cursor-pointer h-[90%] 
