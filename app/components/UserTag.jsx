@@ -12,13 +12,11 @@ function UserTag({user}) {
        items-center'>
        <Image src={user.image} 
        alt='userImage'
-       width={45}
-       height={45}
+       width={30}
+       height={30}
        className='rounded-full'/>
        <div>
-        <h2 className='text-[14px] font-medium text-black'>{user.name}</h2>
-        <h2 className='text-[12px] text-black'>{user.email}</h2>
-
+        <h4 className='text-[12px] font-medium text-black'>{user.name}</h4>
         </div>
        </div>
        :null}

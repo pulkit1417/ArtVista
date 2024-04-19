@@ -11,7 +11,7 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: #000;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: #2d3032;
   }
 }
 
@@ -23,4 +23,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+html::-webkit-scrollbar{
+  width: 0.75rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: #2d3032;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#9651DB;
+  border-radius: 10px ;
 }

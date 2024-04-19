@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <>
-    <div className='p-3'>
+    <div className='p-3 m-0 bg-[#2d3032]'>
       <PinList listOfPins={listOfPins} />
       </div>
     </>

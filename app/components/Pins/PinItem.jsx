@@ -11,7 +11,7 @@ function PinItem({pin}) {
 
     }
   return (
-    <div className='bg-gray-100 rounded-3xl p-3'>
+    <div className='bg-[#D2D3D3] rounded-3xl p-3 border border-[#9651DB] border-4'>
        <div class="relative 
        before:absolute
        before:h-full before:w-full
@@ -28,7 +28,7 @@ function PinItem({pin}) {
         cursor-pointer relative z-0'
         />
        </div>
-        <h2 className='font-bold 
+        <h2 className='font-semibold 
         text-[18px] mb-1 mt-2 line-clamp-2 text-black'>{pin.title}</h2>
         <UserTag user={user} />
     </div>
