@@ -27,7 +27,7 @@ function PinDetail({params}) {
   return (
     <>
    {pinDetail? 
-   <div className=' bg-[#2d3032] p-3 md:p-12  md:px-24 lg:px-36 min-h-screen '>
+   <div className=' bg-[#2d3032] p-3 md:p-12  md:px-24 lg:px-36 min-h-screen'>
        <HiArrowSmallLeft className='text-[60px] font-bold ml-[-50px] 
        cursor-pointer bg-[#9651db] rounded-full p-2  text-black'
        onClick={()=>router.back()}/>

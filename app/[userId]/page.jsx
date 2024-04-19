@@ -51,7 +51,7 @@ function Profile({params}) {
      {userInfo?
      <div>
       <UserInfo userInfo={userInfo} />
-     
+       
       <PinList listOfPins={listOfPins}  />
       </div> :null}
     </div>

@@ -11,8 +11,8 @@ function PinItem({pin}) {
 
     }
   return (
-    <div className='conatiner'>
-    <div className='bg-[#D2D3D3] rounded-3xl p-3 border border-[#9651DB] border-4'>
+    <div className='conatiner '>
+    <div className='bg-[#D2D3D3] rounded-3xl p-3 border border-[#9651DB] border-4 '>
        <div class="hover:cursor-pointer
        " onClick={()=>router.push("/pin/"+pin.id)}>
         <Image src={pin.image}
