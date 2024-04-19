@@ -42,23 +42,23 @@ function Header() {
   return (
     <div className='flex justify-between 
      gap-3 md:gap-2 items-center p-6 '>
-        <Image src='/logo.png' alt='logo'
+        <Image src='' alt='logo'
         width={60} height={60} onClick={()=>router.push('/')}
         className='hover:bg-gray-300 p-2
         rounded-full cursor-pointer'/>
-        <button className='bg-black
-         text-white p-3 px-6 rounded-full
+        <button className='
+         text-black p-3 px-6 rounded-full font-semibold
          text-[25px]
           hidden md:block' onClick={()=>router.push('/')}>Home</button>
-        <button className='font-semibold p-3 px-6
+        <button className=' p-3 px-6 text-black font-semibold
          rounded-full text-[25px]' 
          onClick={()=>onCreateClick()}>Create</button>
-        <div className='bg-[#e9e9e9] p-3 px-6
+        <div className='bg-[#e9e9e9] p-3 px-2 text-black
          gap-3 items-center rounded-full w-full hidden md:flex'>
         <HiSearch className='text-[34px] 
-        text-gray-500'/>
+        text-black'/>
         <input type="text" placeholder='Search'
-        className='bg-transparent outline-none w-full text-[25px]' />
+        className='bg-[#e9e9e9] outline-none w-full text-[22px] text-black' />
        
         </div>
         <HiSearch className='text-[25px] 
@@ -72,7 +72,7 @@ function Header() {
         className='hover:bg-gray-300 p-2
         rounded-full cursor-pointer'/>:
 
-        <button className='font-semibold p-2 px-4 rounded-full'
+        <button className='font-semibold p-2 px-4 rounded-full text-black'
          onClick={() => signIn()}>Login</button>}
 
 

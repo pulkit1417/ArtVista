@@ -80,20 +80,20 @@ function Form() {
        <div className='w-[100%]'>
         <input type="text" placeholder='Add your title'
             onChange={(e)=>setTitle(e.target.value)}
-        className='text-[35px] outline-none font-bold w-full
+        className='text-[35px] outline-none font-bold w-full text-black
         border-b-[2px] border-gray-400 placeholder-gray-400'/>
         <h2 className='text-[12px] mb-8 w-full  text-gray-400'>The first 40 Charaters are 
         what usually show up in feeds</h2>
         <UserTag user={session?.user} />
-        <textarea type="text"
+        <input type="text"
           onChange={(e)=>setDesc(e.target.value)}
             placeholder='Tell everyone what your pin is about' 
-        className=' outline-none  w-full mt-8 pb-4 text-[14px]
+        className=' outline-none  w-full mt-8  text-[14px] text-black
         border-b-[2px] border-gray-400 placeholder-gray-400'/>
           <input type="text"
           onChange={(e)=>setLink(e.target.value)}
            placeholder='Add a Destination Link' 
-        className=' outline-none  w-full  pb-4 mt-[90px]
+        className=' outline-none  w-full mt-[70px] text-black
         border-b-[2px] border-gray-400 placeholder-gray-400'/>
     </div>
        </div>

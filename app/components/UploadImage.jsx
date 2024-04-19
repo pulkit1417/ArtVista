@@ -5,12 +5,12 @@ function UploadImage({setFile}) {
 
 
   return (
-    <div className='h-[450px] bg-[#e9e9e9]
-    rounded-lg'>
+    <div className='h-[400px] bg-[#fafafa]
+    rounded-lg mt-[-55px]'>
         
         <label className='m-5 flex flex-col justify-center items-center
         cursor-pointer h-[90%] 
-        border-[2px] border-gray-300 border-dashed rounded-lg text-gray-600 '>
+        border-[2px] border-gray-300 border-dashed rounded-lg text-black'>
            
           {!selectedFile?
           <div className='flex items-center flex-col'>

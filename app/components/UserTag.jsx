@@ -16,8 +16,8 @@ function UserTag({user}) {
        height={45}
        className='rounded-full'/>
        <div>
-        <h2 className='text-[14px] font-medium'>{user.name}</h2>
-        <h2 className='text-[12px]'>{user.email}</h2>
+        <h2 className='text-[14px] font-medium text-black'>{user.name}</h2>
+        <h2 className='text-[12px] text-black'>{user.email}</h2>
 
         </div>
        </div>
