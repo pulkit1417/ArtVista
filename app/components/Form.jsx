@@ -59,10 +59,10 @@ function Form() {
    
    
   return (
-    <div className=' bg-white p-16 rounded-2xl  shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] mt-24'>
+    <div className=' bg-[#d2d3d3] p-16 rounded-2xl  shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] mt-24 border border-[#9651DB] border-4'>
         <div className='flex justify-end mb-6'>
             <button onClick={()=>onSave()}
-             className='bg-red-500 p-2
+             className='bg-[#9651db] p-2
             text-white font-semibold px-3 
             rounded-lg'>
               {loading?  <Image src="/loading-indicator.png" 
@@ -81,20 +81,20 @@ function Form() {
         <input type="text" placeholder='Add your title'
             onChange={(e)=>setTitle(e.target.value)}
         className='text-[35px] outline-none font-bold w-full text-black
-        border-b-[2px] border-gray-400 placeholder-gray-400'/>
-        <h2 className='text-[12px] mb-8 w-full  text-gray-400'>The first 40 Charaters are 
-        what usually show up in feeds</h2>
+        border-b-[2px] border-gray-400 placeholder-black bg-[#d2d3d3]'/>
+        <h4 className='text-[12px] mb-8 w-full  text-black'>The first 40 Charaters are 
+        what usually show up in feeds</h4>
         <UserTag user={session?.user} />
         <input type="text"
           onChange={(e)=>setDesc(e.target.value)}
             placeholder='Tell everyone what your pin is about' 
         className=' outline-none  w-full mt-8  text-[14px] text-black
-        border-b-[2px] border-gray-400 placeholder-gray-400'/>
+        border-b-[2px] border-gray-400 placeholder-black bg-[#d2d3d3]'/>
           <input type="text"
           onChange={(e)=>setLink(e.target.value)}
            placeholder='Add a Destination Link' 
         className=' outline-none  w-full mt-[70px] text-black
-        border-b-[2px] border-gray-400 placeholder-gray-400'/>
+        border-b-[2px] border-gray-400 placeholder-black bg-[#d2d3d3]'/>
     </div>
        </div>
         

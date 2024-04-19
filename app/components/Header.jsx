@@ -41,8 +41,8 @@ function Header() {
   
   return (
     <div className='flex justify-between 
-     gap-3 md:gap-2 items-center p-2 fixed w-full z-1 backdrop:blur'>
-        <Image src={require('./logo.png')} alt='logo' className="rounded-full" width={60} height={60} onClick={()=>router.push('/')}/>
+     gap-3 md:gap-2 items-center p-2 bg-[#2d3032] w-full z-1 backdrop:blur'>
+        <Image src={require('./logo.png')} alt='logo' className="rounded-full cursor-pointer" width={60} height={60} onClick={()=>router.push('/')}/>  
         <button className='text-white p-2 px-6 rounded-full font-semibold bg-black
          text-[16px] border border-[#9651DB] border-2
           hidden md:block hover:bg-[#9651DB] hover:text-black transition-colors duration-300'
@@ -72,7 +72,7 @@ function Header() {
         className='hover:bg-[#9651DB] p-1
         rounded-full cursor-pointer'/>:
 
-        <button className='font-semibold p-2 px-4 rounded-full text-black'
+        <button className='font-semibold p-2 px-4 rounded-full bg-black border border-[#9651DB] border-2 hover:bg-[#9651DB] hover:text-black transition-colors duration-300'
          onClick={() => signIn()}>Login</button>}
 
 

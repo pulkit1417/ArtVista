@@ -31,11 +31,10 @@ function PinDetail({params}) {
        <HiArrowSmallLeft className='text-[60px] font-bold ml-[-50px] 
        cursor-pointer hover:bg-gray-200 rounded-full p-2 '
        onClick={()=>router.back()}/>
-      <div className='grid grid-cols-1 mt-5 shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] lg:grid-cols-2 md:gap-10 
+      <div className='grid grid-cols-1 shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] lg:grid-cols-2 md:gap-10 
       rounded-2xl p-3 md:p-7 lg:p-12 xl:pd-16' 
       >
-     
-        <PinImage pinDetail={pinDetail} />
+         <PinImage pinDetail={pinDetail} />
         <div className="">
         <PinInfo pinDetail={pinDetail}/>
         </div>
