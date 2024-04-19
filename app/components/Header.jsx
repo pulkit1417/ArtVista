@@ -42,10 +42,12 @@ function Header() {
   return (
     <div className='flex justify-between 
      gap-3 md:gap-2 items-center p-6 '>
-        <Image src='' alt='logo'
+        {/* <Image src='/logo.png' alt='logo'
         width={60} height={60} onClick={()=>router.push('/')}
         className='hover:bg-gray-300 p-2
-        rounded-full cursor-pointer'/>
+        rounded-full cursor-pointer'/> */}
+        <Image src='/logo.png' alt='logo' width={60} height={60} onClick={()=>router.push('/')}
+         className='hover:bg-gray-300 p-2 rounded-full cursor-pointer'/>
         <button className='
          text-black p-3 px-6 rounded-full font-semibold
          text-[25px]
