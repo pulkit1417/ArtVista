@@ -26,8 +26,8 @@ Our Website- "ArtVista" provides easy to view Art Gallery ,providing many easy t
 4. get easy access to your projects, delete them as per your wish
 5. A very special feature that we provide is 'Exhibition', A area that provides teh user with best selling art by the sellers to choose from.
 6. check your uploaded media anytime on your profile, for anytime access.
-7. # Search for Art works and photos related to your genre by typing your genre on the search bar.
+7. Search for Art works and photos related to your genre by typing your genre on the search bar.
    Future Scope:
 8. Get personalized recommendation of art based on your previous searches .
 9. Integration of Block-Chain with the project.
-10. # Live artist Interaction .
+10. Live artist Interaction .
