@@ -20,7 +20,7 @@ function PinItem({pin}) {
         width={500}
         height={500}
         className='rounded-3xl 
-        cursor-pointer relative z-0'
+        cursor-pointer relative z-0 '
         />
        </div>
        <div>

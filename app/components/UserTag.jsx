@@ -6,17 +6,17 @@ import Image from 'next/image';
 function UserTag({user}) {
     //const {data:session}=useSession();
   return (
-    <div className=''>
+    <div className='text-black font-semibold'> 
        {user?
        <div className='flex gap-3 
        items-center'>
        <Image src={user.image} 
        alt='userImage'
-       width={30}
-       height={30}
+       width={50}
+       height={50}
        className='rounded-full'/>
-       <div>
-        <h4 className='text-[12px] font-medium text-black'>{user.name}</h4>
+       <div className='text-black'>
+        <h3 className='font-medium text-black'>{user.name}</h3>
         </div>
        </div>
        :null}
