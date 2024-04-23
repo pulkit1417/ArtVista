@@ -16,19 +16,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Our Website- "ArtVista" provides easy to view Art Gallery ,providing many easy to use functionalities such as,
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. User Friendly Interface.
+2. Google authentication Sign-in.
+3. personalized profile with easy media uploading .
+4. get easy access to your projects, delete them as per your wish
+5. A very special feature that we provide is 'Exhibition', A area that provides teh user with best selling art by the sellers to choose from.
+6. check your uploaded media anytime on your profile, for anytime access.
+7. Search for Art works and photos related to your genre by typing your genre on the search bar.
+   Future Scope:
+8. Get personalized recommendation of art based on your previous searches .
+9. Integration of Block-Chain with the project.
+10. Live artist Interaction .
