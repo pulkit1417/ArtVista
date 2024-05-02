@@ -5,24 +5,26 @@ const nextConfig = {
     }
 }
 
-export default nextConfig
+module.exports = nextConfig
 // next.config.js
-import { ProvidePlugin } from 'webpack';
+const webpack = require('webpack');
 
-export function webpack(config) {
+module.exports = {
+  webpack: (config) => {
     config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        net: false,
-        tls: false,
+      ...config.resolve.fallback,
+      fs: false,
+      net: false,
+      tls: false,
     };
 
     config.plugins.push(
-        new ProvidePlugin({
-            process: 'process/browser',
-            Buffer: ['buffer', 'Buffer'],
-        })
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
+        Buffer: ['buffer', 'Buffer'],
+      })
     );
 
     return config;
-}
+  },
+};
