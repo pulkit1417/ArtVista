@@ -26,6 +26,8 @@
     "web3": "^4.8.0"
   },
   "devDependencies": {
-    "@metamask/providers": "^16.1.0"
+    "@metamask/providers": "^16.1.0",
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "process": "^0.11.10"
   }
 }
