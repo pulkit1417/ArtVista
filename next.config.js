@@ -5,7 +5,6 @@ const nextConfig = {
     }
 }
 
-module.exports = nextConfig
 // next.config.js
 const webpack = require('webpack');
 
