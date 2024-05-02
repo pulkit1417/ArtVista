@@ -66,7 +66,7 @@ function Header() {
         rounded-full cursor-pointer'/>:
         
 
-        <button className='font-semibold p-2 px-4 rounded-full bg-black border border-[#9651DB] border-2 hover:bg-[#9651DB] hover:text-black transition-colors duration-300'
+        <button className='font-semibold p-2 px-4 rounded-full mt-5 bg-black border border-[#9651DB] border-2 hover:bg-[#9651DB] hover:text-black transition-colors duration-300'
          onClick={() => signIn()}>Login</button>}
          </div>
          </div>
